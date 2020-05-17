@@ -22,4 +22,11 @@ class TestCase {
 		assertEquals(yr.isLeap(),false);
 	}
 	
+	@Test
+	public void testDivisibleBy4not100() {
+		//All years divisible by 4 but not by 100 ARE leap years (e.g., 2008, 2012, 2016),
+		yr.setYear(2008);
+		assertEquals(yr.isLeap(),true);
+	}
+	
 }
