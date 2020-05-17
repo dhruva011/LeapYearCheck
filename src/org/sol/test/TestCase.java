@@ -29,4 +29,11 @@ class TestCase {
 		assertEquals(yr.isLeap(),true);
 	}
 	
+	@Test
+	public void testNotDivisibleBy4() {
+		//All years not divisible by 4 are NOT leap years (e.g. 2017, 2018, 2019).
+		yr.setYear(2018);
+		assertEquals(yr.isLeap(),false);
+	}
+	
 }
