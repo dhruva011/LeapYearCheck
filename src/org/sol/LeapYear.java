@@ -3,8 +3,10 @@ package org.sol;
 public class LeapYear {
 	private int year;
 	
-	//Initially let's consider no year is a leap year
+	//Handling Year which are divisible by 400
 	public boolean isLeap() {
+		if(this.year%400==0)
+			return true;
 		return false;
 	}
 	
