@@ -15,4 +15,11 @@ class TestCase {
 		assertEquals(yr.isLeap(),true);
 	}
 	
+	@Test
+	public void testDivisibleBy100not400() {
+		//All years divisible by 100 but not by 400 are NOT leap years (so, for example, 1700, 1800, and 1900 were NOT leap years, NOR will 2100 be a leap year),
+		yr.setYear(1700);
+		assertEquals(yr.isLeap(),false);
+	}
+	
 }
